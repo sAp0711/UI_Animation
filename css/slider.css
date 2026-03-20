@@ -39,7 +39,7 @@
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  background: url('assets/snowflake.jpg') no-repeat center;
+  background: url('../assets/snowflake.jpg') no-repeat center;
   background-size: contain;
   cursor: pointer;
 }
