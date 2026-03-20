@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Christmas Tree</title>
+    <link rel="stylesheet" href="./css/christmasTree.css" />
+    <link rel="stylesheet" href="./css/snowToggle.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+  </head>
+  <body>
+    <span class="text">Snowflake Count:</span>
+    <input
+      type="range"
+      class="snowDensity"
+      min="100"
+      max="800"
+      value="200"
+      id="slider"
+    />
+
+    <span class="densityDisplay" id="value">100</span>
+
+    <div class="star-holder">
+      <img class="star" src="./assets/star.png" />
+    </div>
+
+    <div class="container"></div>
+
+    <div class="switchContainer">
+      <label for="toggle">
+        <input type="checkbox" id="toggle" class="toggle-input" />
+        <div class="toggle-switch"></div>
+      </label>
+    </div>
+
+    <script src="./js/christmasTree.js"></script>
+    <script type="module" src="./js/snowToggle.js"></script>
+  </body>
+</html>

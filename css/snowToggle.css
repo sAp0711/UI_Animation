@@ -1,0 +1,31 @@
+:root {
+  --switch-height: 30px;
+  --switch-width: 60px;
+}
+.switchContainer {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  height: var(--switch-height);
+  width: var(--switch-width);
+  border: none;
+  border-radius: 5px;
+  padding: 0.25rem;
+  background-color: rgb(46, 27, 8);
+}
+.toggle-input {
+  display: none;
+}
+.toggle-switch {
+  height: var(--switch-height);
+  width: var(--switch-height);
+  border-radius: 5px;
+  background-color: rgb(27, 1, 1);
+  transition: all 0.5s;
+}
+.toggle-input:checked ~ .toggle-switch /*targeting sibling(in the same div) class*/ {
+  transform: translateX(30px);
+}

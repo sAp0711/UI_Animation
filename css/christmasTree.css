@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 24, 16);
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star {
+  height: 45px;
+}
+.star-holder {
+  display: flex;
+  margin-bottom: 8px;
+  animation: Rotate infinite forwards 4s;
+}
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root {
+  --toggle-height: 30px;
+}
+.unit {
+  background-color: rgb(0, 0, 0);
+  height: var(--toggle-height);
+  border-radius: calc(4px + var(--toggle-height) * 0.5);
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  overflow: hidden;
+}
+
+.toggle {
+  height: var(--toggle-height);
+  flex-shrink: 0;
+  min-width: 30px;
+  border-radius: calc(var(--toggle-height) * 0.5);
+  display: flex;
+  align-items: center;
+  margin-right: 2px;
+  padding-left: 4px;
+}
+.toggleSwitch {
+  height: calc(var(--toggle-height) - 4px);
+  width: calc(var(--toggle-height) - 4px);
+  border-radius: 50%;
+  animation: toggleSwitch infinite alternate;
+  animation-duration: var(--time);
+}
+@keyframes toggleSwitch {
+  100% {
+    transform: translateX(var(--move-x));
+  }
+}

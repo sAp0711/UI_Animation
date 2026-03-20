@@ -1,0 +1,45 @@
+.snowDensity {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.text {
+  color: bisque;
+  font-family: Arial;
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  font-size: 14px;
+}
+.densityDisplay {
+  position: absolute;
+  left: 24px;
+  color: bisque;
+  font-family: Arial;
+  top: 70px;
+  font-size: 14px;
+}
+
+/* The slider itself */
+.snowDensity {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 150px;
+  height: 20px;
+  background: rgb(204, 242, 255);
+  outline: none;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.snowDensity::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background: url(/assets/snowflake.jpg) no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+}
